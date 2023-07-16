@@ -3,6 +3,7 @@ package controllers
 import (
 	"context"
 	"fmt"
+	"log"
 	"net/http"
 	"time"
 
@@ -12,8 +13,6 @@ import (
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
 )
-
-// TASK: Repeted Code Remove
 
 func AddAddress() gin.HandlerFunc {
 	return func(c *gin.Context) {
@@ -50,14 +49,13 @@ func AddAddress() gin.HandlerFunc {
 
 		var addressinfo []bson.M
 		if err = pointcursor.All(ctx, &addressinfo); err != nil {
-			panic(err)
+			log.Panic(err)
 		}
 
 		var size int32
-		for _, address_no = range addressinfo {
+		for _, address_no := range addressinfo {
 			count := address_no["count"]
-			size =
-				count.(int32)
+			size = count.(int32)
 		}
 
 		if size < 2 {
@@ -175,7 +173,7 @@ func DeleteAddress() gin.HandlerFunc {
 
 		filter := bson.D{primitive.E{Key: "_id", Value: usert_id}}
 		update := bson.D{{Key: "$set", Value: bson.D{primitive.E{Key: "address", Value: addresses}}}}
-		_, err := UserCollection.UpdateOne(ctx, filter, update)
+		_, err = UserCollection.UpdateOne(ctx, filter, update)
 		if err != nil {
 			c.IndentedJSON(404, "Wrong Command")
 			return

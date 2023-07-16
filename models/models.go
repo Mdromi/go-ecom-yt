@@ -6,13 +6,14 @@ import (
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
+// User represents the user model
 type User struct {
 	ID              primitive.ObjectID `json:"_id" bson:"_id"`
-	First_Name      *string            `json:"first_name" 	validate:"required,min=2,max=30"`
-	Last_Name       *string            `json:"last_name" 	validate:"required,min=2,max=30"`
-	Password        *string            `json:"password" 	validate:"required,min=6"`
-	Email           *string            `json:"email" 		validate:"email,required"`
-	Phone           *string            `json:"phone" 		validate:"required"`
+	First_Name      *string            `json:"first_name" validate:"required,min=2,max=30"`
+	Last_Name       *string            `json:"last_name" validate:"required,min=2,max=30"`
+	Password        *string            `json:"password" validate:"required,min=6"`
+	Email           *string            `json:"email" validate:"email,required"`
+	Phone           *string            `json:"phone" validate:"required"`
 	Token           *string            `json:"token"`
 	Refresh_Token   *string            `json:"refresh_token"`
 	Created_At      time.Time          `json:"created_at"`
@@ -23,6 +24,7 @@ type User struct {
 	Order_Status    []Order            `json:"orders" bson:"orders"`
 }
 
+// Product represents the product model
 type Product struct {
 	Product_ID   primitive.ObjectID `bson:"_id"`
 	Product_Name *string            `json:"product_name"`
@@ -31,6 +33,7 @@ type Product struct {
 	Image        *string            `json:"image"`
 }
 
+// ProductUser represents the product in the user's cart
 type ProductUser struct {
 	Product_ID   primitive.ObjectID `bson:"_id"`
 	Product_Name *string            `json:"product_name" bson:"product_name"`
@@ -39,6 +42,7 @@ type ProductUser struct {
 	Image        *string            `json:"image" bson:"image"`
 }
 
+// Address represents the address model
 type Address struct {
 	Address_ID primitive.ObjectID `bson:"_id"`
 	House      *string            `json:"house_name" bson:"house_name"`
@@ -47,6 +51,7 @@ type Address struct {
 	Pincode    *string            `json:"pincode" bson:"pincode"`
 }
 
+// Order represents the order model
 type Order struct {
 	Order_ID       primitive.ObjectID `bson:"_id"`
 	Order_Cart     []ProductUser      `json:"order_list" bson:"order_list"`
@@ -56,6 +61,7 @@ type Order struct {
 	Payment_Method Payment            `json:"payment_method" bson:"payment_method"`
 }
 
+// Payment represents the payment method model
 type Payment struct {
 	Digital bool
 	COD     bool
