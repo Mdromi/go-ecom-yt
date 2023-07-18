@@ -107,24 +107,24 @@ Response :"Successfully Signed Up!!"
   ```json
   {
     "email": "mdromi14@gmail.com",
-    "password": "pas123",
+    "password": "pas123"
   }
   ```
 
 response will be like this
   ```json
   {
-    "_id": "***********************",
-    "first_name": "akhil",
-    "last_name": "sharma",
-    "password": "$2a$14$UIYjkTfnFnhg4qhIfhtYnuK9qsBQifPKgu/WPZAYBaaN17j0eTQZa",
-    "email": "akhil@gmail.com",
-    "phone": "+4534545435",
-    "token": "eyJc0Bwcm90b25vbWFpbC5jb20iLCJGaXJzdF9OYW1lIjoiam9zZXBoIiwiTGFzdF9OYW1lIjoiaGVybWlzIiwiVWlkIjoiNjE2MTRmNTM5ZjI5YmU5NDJiZDlkZjhlIiwiZXhwIjoxNjMzODUzNjUxfQ.NbcpVtPLJJqRF44OLwoanynoejsjdJb5_v2qB41SmB8",
-    "Refresh_Token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6IiIsIkZpcnLCJVaWQiOiIiLCJleHAiOjE2MzQzNzIwNTF9.ocpU8-0gCJsejmCeeEiL8DXhFcZsW7Z3OCN34HgIf2c",
-    "created_at": "2022-04-09T08:14:11Z",
-    "updtaed_at": "2022-04-09T08:14:11Z",
-    "user_id": "61614f539f29be942bd9df8e",
+    "_id": "64b46006c6857a8bc5449ff1",
+    "first_name": "Md",
+    "last_name": "Romi",
+    "password": "$2a$14$xokVkVJXwR3xq8uG42jA/uXoMS/hr5DPzVSEtDdnGadz/wu61aUdG",
+    "email": "mdromi14@gmail.com",
+    "phone": "+8801793202",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1kcm9taTE0QGdtYWlsLmNvbSIsImZpcnN0X25hbWUiOiJNZCIsImxhc3RfbmFtZSI6IlJvbWkiLCJ1aWQiOiI2NGI0NjAwNmM2ODU3YThiYzU0NDlmZjEiLCJleHAiOjE2ODk2MjkwNjJ9.6tek3_MXd8yLKZED6YpZb3EQGFKzwXqTFXJVFnA7Hc8",
+    "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IiIsImZpcnN0X25hbWUiOiIiLCJsYXN0X25hbWUiOiIiLCJ1aWQiOiIiLCJleHAiOjE2OTAxNDc0NjJ9.TBk7aukEwp9w0U_Ume1br8rRM537E4q3oy_VpcrcD1w",
+    "created_at": "2023-07-16T21:24:22Z",
+    "updated_at": "2023-07-16T21:24:22Z",
+    "user_id": "64b46006c6857a8bc5449ff1",
     "usercart": [],
     "address": [],
     "orders": []
@@ -159,39 +159,46 @@ Response
   ```json
   [
     {
-      "Product_ID": "6153ff8edef2c3c0a02ae39a",
-      "product_name": "alienwarex15",
-      "price": 1500,
-      "rating": 10,
-      "image": "alienware.jpg"
+        "Product_ID": "64b6a6724219114bbdbec147",
+        "product_name": "Alienware x15",
+        "price": 2500,
+        "rating": 10,
+        "image": "alienware.jpg"
     },
     {
-      "Product_ID": "616152679f29be942bd9df8f",
-      "product_name": "giner ale",
-      "price": 900,
-      "rating": 5,
-      "image": "gin.jpg"
+        "Product_ID": "64b6a6914219114bbdbec149",
+        "product_name": "Mac Pro",
+        "price": 2500,
+        "rating": 5,
+        "image": "mac_pro.jpg"
     },
     {
-      "Product_ID": "616152ee9f29be942bd9df90",
-      "product_name": "iphone 13",
-      "price": 1700,
-      "rating": 4,
-      "image": "ipho.jpg"
+        "Product_ID": "64b6a6c04219114bbdbec14b",
+        "product_name": "giner ale",
+        "price": 900,
+        "rating": 5,
+        "image": "gin.jpg"
     },
     {
-      "Product_ID": "616152fa9f29be942bd9df91",
-      "product_name": "whiskey",
-      "price": 100,
-      "rating": 7,
-      "image": "whis.jpg"
+        "Product_ID": "64b6a6cd4219114bbdbec14d",
+        "product_name": "iphone 13",
+        "price": 1700,
+        "rating": 4,
+        "image": "ipho.jpg"
     },
     {
-      "Product_ID": "616153039f29be942bd9df92",
-      "product_name": "acer predator",
-      "price": 3000,
-      "rating": 10,
-      "image": "acer.jpg"
+        "Product_ID": "64b6a6db4219114bbdbec14f",
+        "product_name": "whiskey",
+        "price": 100,
+        "rating": 7,
+        "image": "whis.jpg"
+    },
+    {
+        "Product_ID": "64b6a6e84219114bbdbec151",
+        "product_name": "acer predator",
+        "price": 3000,
+        "rating": 10,
+        "image": "acer.jpg"
     }
   ]
   ```
